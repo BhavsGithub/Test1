@@ -1,6 +1,6 @@
 # TB Challenge Project 
 
-In AWS Console - creating EC2 instance - Linux AMI 
+In AWS Console - create EC2 instance - Linux AMI 
 
 Saving the .pem file generated during creation and using the same to generate public key using putty and save it.
 
