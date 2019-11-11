@@ -141,6 +141,6 @@ To list the hosts in the inventory file, you can run the below command
  ``$ ansible webservers --list-hosts``
  
  #### Once everything is set-up run the ansible playbook
-  ### ``ansible-playbook nginxnew1.yml``
+  ### ``ansible-playbook nginxnew.yml``
   
  
