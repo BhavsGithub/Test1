@@ -1,6 +1,16 @@
-# TB Challenge Project
+# TB Challenge Project 
 
-## Using configation management and provisioning tools to complete the tasks.
+In AWS Console - creating EC2 instance - Linux AMI 
+
+Saving the .pem file generated during creation and using the same to generate public key using putty and save it.
+
+Connect the AMI via SSH using putty User: Ec2-user
+
+Run the command ``sudo yum update -y`` to update all packages
+
+#### Using configation management and provisioning tools to complete the tasks.
+
+## Using Terraform to create Amazon Ubuntu EC2 instance
 
 Terraform is a tool made by Hashicorp for building, changing, and versioning infrastructure safely and efficiently. Terraform can manage existing and popular service providers ( aws, azure, Google cloud) as well as custom in-house solutions.
 
