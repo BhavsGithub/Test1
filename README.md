@@ -143,4 +143,36 @@ To list the hosts in the inventory file, you can run the below command
  #### Once everything is set-up run the ansible playbook
   ### ``ansible-playbook nginxnew.yml``
   
+  ## Creating Route 53 domain and A records using Terraform.
+  
+  Registered a domain "tbistro.tk" with a domain provider.
+
+Use Terraform to create internal Route 53 domain and A records (for www.tbistro.tk and Public IPv4 of the EC2 instance) and run it using the steps provided above (Terraform section)
+
+``File to run - route53.tf``
+
+Add the name server records provided by AWS to the NS record of the domain provider.
+
+Create another EC2 instance with a security group to allow only client (My IP) and Host IP (IP of the machine where Ansible is managed) on SSH port so that SSH access is blocked from rest of the world.
+
+## Use Ansible to install nginx with Let's Encrypt.
+
+Make sure the EC2 instance create is pingable from the Host system (steps provided in Ansible configuration section).
+
+Use the Ansible playbooks as stated above.
+
+``files to run playbook.yml
+    ansible-playbook playbook.yml
+    ``
+    
+All the supporting files for Ansible playbook are created in a folder called Templates.
+
+``Supporting files
+     nginx-http.j2
+     nginx-le.j2
+     nginx.conf.j2
+ ``
+ Once the command was run successfully, tried to open a "www.tbistro.tk" in browser. It displays ngnix webpage with valid SSL Certificate.
+
+
  
