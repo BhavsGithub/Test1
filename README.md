@@ -167,12 +167,13 @@ Use the Ansible playbooks as stated above.
     
 All the supporting files for Ansible playbook are created in a folder called Templates.
 
-``Supporting files
+`` 
+     Supporting files
      nginx-http.j2
      nginx-le.j2
      nginx.conf.j2
  ``
- Once the command was run successfully, tried to open a "www.tbistro.tk" in browser. It displays ngnix webpage with valid SSL Certificate.
+ Once the command was run successfully, tried to open "www.tbistro.tk" in browser. It displays ngnix webpage with valid SSL Certificate.
 
 
  
